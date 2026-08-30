@@ -38,35 +38,35 @@ SQL Clauses :
 
 CRUD Operation:
 
-1.Create (C) - To create database , tables and to insert record
-2.Read (R) - To read the data present in database
-3.Update (U) - To modify already inserted data 
-4.DELETE (D) - To delete database , tables , rows & columns 
+        1.Create (C) - To create database , tables and to insert record
+        2.Read (R) - To read the data present in database
+        3.Update (U) - To modify already inserted data 
+        4.DELETE (D) - To delete database , tables , rows & columns 
 
 Rules for Writing SQL Queries -
-1.End an sql statements with semi-colon 
-2.Case insensitive
-3.Space & new line are allow for better readability
-4.Don't use sql keyword or name 
-5.Use data constraints to ensure data accuracy 
-6.String values must be enrolls is single/double quotes
+        1.End an sql statements with semi-colon 
+        2.Case insensitive
+        3.Space & new line are allow for better readability
+        4.Don't use sql keyword or name 
+        5.Use data constraints to ensure data accuracy 
+        6.String values must be enrolls is single/double quotes
                         
 
 commonly used datatypes in SQL :
-1.CHAR
-2.VARCHAR
-3.INT
-4.FLOAT
-5.BIGINT
-6.DOUBLE
-7.BOOLEAN
-8.DATE
-9.TIME
-10.YEAR
+        1.CHAR
+        2.VARCHAR
+        3.INT
+        4.FLOAT
+        5.BIGINT
+        6.DOUBLE
+        7.BOOLEAN
+        8.DATE
+        9.TIME
+        10.YEAR
 
 Keys & constraints used in SQL :
-1.NOT NULL - Ensure that no records can have null values 
-2.PRIMARY KEY - A primary key is a key that uniquely identified every record in each row.Each table can have only one primary key
-3.FOREIGN KEY - Foreign key is a key that refers to the primary key of another table.It is used for creating relationship between two tables.
+        1.NOT NULL - Ensure that no records can have null values 
+        2.PRIMARY KEY - A primary key is a key that uniquely identified every record in each row.Each table can have only one primary key
+        3.FOREIGN KEY - Foreign key is a key that refers to the primary key of another table.It is used for creating relationship between two tables.
 
 Other Keys - Candidate key , Super key , Alternate Key
