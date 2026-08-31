@@ -70,3 +70,61 @@ Keys & constraints used in SQL :
         3.FOREIGN KEY - Foreign key is a key that refers to the primary key of another table.It is used for creating relationship between two tables.
 
 Other Keys - Candidate key , Super key , Alternate Key
+
+
+* DAY 3 :- 
+                        ---- WRITING SQL QUERIES ---- 
+
+- creating a new table 
+
+        CREATE TABLE table_name (
+                column_name_1           data_type,
+                Column_name_2           data_type,
+                column_name_3           data_type,
+                .                     .
+                .                     .
+                column_name_n           data_type
+        );
+
+        Ex; suppose we want to create a table 'Student' with attributes (student_name,student_id,department,city)
+
+        CREATE TABLE Student (
+                student_name            VARCHAR(50),
+                student_id              INT PRIMARY KEY,
+                department              VARCHAR(30),
+                city                    VARCHAR(30)
+        );
+
+- Inserting new data
+
+        INSERT INTO table_name VALUES 
+        (Value11,value12,.....),
+        (value21,value22,.....),
+        (value31,value32,.....),
+                .
+                .
+        (value_n1,value_n2,...);
+
+        Ex; suppose we want to insert values in the Student table  (student_name,student_id,department,city)
+
+        INSERT INTO Student VALUES
+        ('Morgan',01,'AI/ML','Canada'),
+        ('Henry',02,'MBA','London'),
+        ('Mathew',03,'IT','Canada'),
+        ('Robert',04,'CSE','Europe');
+
+- Retriving the data 
+
+        SELECT * FROM table_name;
+
+        Ex; suppose we want to retrive data from Student table 
+        SELECT * FROM Student;
+
+        retriving specific columns in a table 
+
+        SELECT (C1,C2,C3...,Cn)
+        FROM table_name;
+
+        Ex; suppose we want to retrive the department and student id in Student table
+        SELECT (department,student_id)
+        FROM Student;
