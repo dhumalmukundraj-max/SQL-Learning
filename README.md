@@ -128,3 +128,68 @@ Other Keys - Candidate key , Super key , Alternate Key
         Ex; suppose we want to retrive the department and student id in Student table
         SELECT (department,student_id)
         FROM Student;
+
+* DAY 4 :-
+
+WHERE clause : WHERE clause specifies a condition that has to be satisfied for retriving data 
+
+- Retriving data from selected row 
+
+        SELECT * 
+        FROM table_name 
+        WHERE condition;
+
+        Ex;suppose we want to retrive the data of Henry from Student table
+
+        SELECT *
+        FROM Student 
+        WHERE student_name = "Henry";
+
+
+- Updating data for all rows 
+
+        UPDATE table_name 
+        SET column_name=value;
+
+        Ex;Suppose we want to update the department of all students to IT
+
+        UPDATE Student
+        SET department="IT";
+
+
+- Updating data for specific row
+
+        UPDATE table_name
+        SET column_name=value
+        WHERE condition;
+
+        Ex;Suppose we want to update the department of student whose name is Henry to IT
+
+        UPDATE Student
+        SET department="IT"
+        WHERE student_name="Henry";
+
+
+- Deleting specific data from table 
+
+        DELETE FROM table_name
+        WHERE condition;
+
+        Ex;suppose we want to delete the data of student whose name is Henry
+
+        DELETE FROM Student
+        WHERE student_name="Henry";
+
+
+- Deleting all data from exixting table 
+        DELETE FROM table_name;
+
+        Ex;Suppose we want to delete all data from Student table
+        DELETE FROM Student;
+
+
+- Deleting the table 
+        DELETE TABLE table_name;
+
+        Ex;Suppose we want to delete the table Student
+        DELETE TABLE Student;
