@@ -182,6 +182,7 @@ WHERE clause : WHERE clause specifies a condition that has to be satisfied for r
 
 
 - Deleting all data from exixting table 
+
         DELETE FROM table_name;
 
         Ex;Suppose we want to delete all data from Student table
@@ -189,6 +190,7 @@ WHERE clause : WHERE clause specifies a condition that has to be satisfied for r
 
 
 - Deleting the table 
+
         DELETE TABLE table_name;
 
         Ex;Suppose we want to delete the table Student
