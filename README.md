@@ -181,7 +181,7 @@ WHERE clause : WHERE clause specifies a condition that has to be satisfied for r
         WHERE student_name="Henry";
 
 
-- Deleting all data from exixting table 
+- Deleting all data from existing table 
 
         DELETE FROM table_name;
 
@@ -195,3 +195,59 @@ WHERE clause : WHERE clause specifies a condition that has to be satisfied for r
 
         Ex;Suppose we want to delete the table Student
         DELETE TABLE Student;
+
+
+* DAY 5 :-
+
+- Adding column to a existing table 
+
+ALTER TABLE table_name
+ADD column_name data_type;
+
+Ex;Suppose we want to to add column 'E-mail' to Student table 
+
+ALTER TABLE Student
+ADD COLUMN E_mail VARCHAR(50);
+
+
+- Renaming column in a existing table 
+
+ALTER TABLE table_name 
+RENAME COLUMN column_name_1 TO column_name_2;
+
+Ex;Suppose we want to rename the column name 'E_mail' to 'Mail_id'
+
+ALTER TABLE table_name 
+RENAME COLUMN E_mail TO Mail_id;
+
+
+- Deleting column in a existing table 
+
+ALTER TABLE table_name 
+DROP COLUMN column_name;
+
+Ex;Suppose we want to delete the column Mail_id from student table 
+
+ALTER TABLE Student
+DROP COLUMN Mail_id;
+
+
+- SQL Operators
+
+SQL provides various operators to perform wide range of queries on Database
+1.Comparision Operators
+2.String Operators
+3.Logical Operators
+4.Special Operators
+
+1.Comparision operators :
+
+                Operator                        description
+                   =                            Equal To
+                   !=                           Not Equal To
+                   >                            Greater Than
+                   <                            Less Than
+                   >=                           Greater Than Equal To
+                   <=                           Less Than Equal To
+
+
