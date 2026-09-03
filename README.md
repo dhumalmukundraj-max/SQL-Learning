@@ -251,3 +251,59 @@ WHERE clause : WHERE clause specifies a condition that has to be satisfied for r
                    <=                           Less Than Equal To
 
 
+* DAY 6 :-
+
+
+2.String Operators :
+
+        syntax: SELECCT
+                FROM table_name 
+                WHERE column_1 LIKE pattern;
+
+Rules:
+
+.To write pattern use wild card character(%,-)
+. % represents zero character
+. - represents only one direction 
+
+
+        Ex;Suppose we want to reterive the info of all students whose name starts with 'M' 
+
+        SELECT
+        FROM Student
+        WHERE 
+        student_name 'M%';
+
+
+3.Logical Operators :
+
+        *AND Operator - Retrive all rows which satisfy both condition 1 and condition 2
+
+                SELECT * FROM table_name 
+                WHERE c1 AND c2;
+
+                Ex;Suppose we want to retrive the students whose dept id IT and city is canada
+
+                SELECT FROM Student
+                WHERE dept='IT' AND city='canada';
+
+        *OR Operator - Retrive all the rows which satisfy atleast one of the given condition 
+
+                SELECT FROM table_name 
+                WHERE c1 OR c2;
+
+                Ex;Suppose we want to retrive the students whose dept id IT or city is canada
+
+                SELECT FROM Student
+                WHERE dept='IT' OR city='canada';
+
+        *NOT Operator - It is used to negate a condition in where clause 
+
+                SELECT FROM tbale_name 
+                WHERE NOT c1;
+
+                Ex;Suppose we want to retrive all students where dept is not IT 
+
+                SELECT FROM Student 
+                WHERE NOT dept LIKE 'IT';
+
