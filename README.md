@@ -343,3 +343,20 @@ Rules:
 
 
 
+- ORDER BY : ORDER BY sorts row based on values of column c1.
+
+  Ascending order --- ASC
+  Descending order --- DESC
+
+Syntax :
+        SELECT *
+        FROM table_name 
+        ORDER BY c1 ASC;
+
+Ex;Suppose we want to sort the students based on their age ; Highest to lowest
+
+        SELECT *
+        FROM Student 
+        ORDER BY age DESC;
+
+
