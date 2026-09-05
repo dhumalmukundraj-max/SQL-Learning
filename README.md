@@ -349,6 +349,7 @@ Rules:
   Descending order --- DESC
 
 Syntax :
+        
         SELECT *
         FROM table_name 
         ORDER BY c1 ASC;
