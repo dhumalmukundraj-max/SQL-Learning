@@ -307,3 +307,39 @@ Rules:
                 SELECT FROM Student 
                 WHERE NOT dept LIKE 'IT';
 
+
+* DAY 7 :-
+
+- IN & BETWEEN Operator :
+
+        1.IN Operator :
+        Retrives rows where values of column_1 is in the given values 
+
+                Syntax:
+                SELECT * 
+                FROM table_name 
+                WHERE c1 IN (v1,v2,....,n)
+
+                Ex;Suppose we want to get students from IT and AIML branch 
+
+                SELECT *
+                FROM Student 
+                WHERE dept IN ('IT','AIML')
+
+
+        2.BETWEEN Operator :
+        Retrive all the rows where value of c1 lies between v1 and v2 
+
+                Syntax:
+                SELECT * 
+                FROM table_name 
+                WHERE c1 BETWEEN v1 AND v2;
+
+                Ex;suppose we want to retrive the students whose age is between 20 & 25 
+
+                SELECT * 
+                FROM Student 
+                WHERE age BETWEEN 20 AND 25;
+
+
+
