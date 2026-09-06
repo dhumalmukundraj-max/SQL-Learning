@@ -361,3 +361,57 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
         ORDER BY age DESC;
 
 
+* DAY 8 :-
+
+- LIMIT  & OFFSET clause 
+
+1.LIMIT : It is used to specify number of rows
+2.OFFSET : It is used to specify position from where the rows are to be selected 
+
+        Ex; LIMIT:4
+        OFFSET:2
+        It means ,Leave the first two rows and select 4 rows after that 
+
+        LIMIT:3
+        OFFSET:0
+        It means ,Without  leaving any row select first three rows 
+
+- If OFFSET is not defined is taken as 0 as default value 
+
+        syntax:
+          SELECT * 
+          FROM table_name 
+          LIMIT L
+          OFFSET 0;
+
+        Ex;Suppose we want to retrive information of top 5 students who score good 
+          SELECT *
+          FROM Student 
+          ORDER BY marks DESC
+          LIMIT 5
+          OFFSET 0;
+
+- Distinct results (No duplication)
+
+        Syntax:
+          SELECT DISTINCT c1
+          FROM tbale_name ;
+
+        Ex;Retriving unique names of students 
+          SELECT DISTINCT student_nanme 
+          FROM Student ;
+
+- Aggregations : Aggregations means combining multiple values into a single values 
+
+        Aggregation Functions:
+        1.SUM
+        2.MIN
+        3.MAX
+        4.COUNT
+        5.AVG 
+
+        Syntax:
+          SELECT 
+          agg_fun (c1)
+          FROM table_name ;
+
