@@ -415,3 +415,20 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
           agg_fun (c1)
           FROM table_name ;
 
+* DAY 9 :-
+
+- Alias (AS) : You can provide an alternate temporary name to the given columns 
+
+ Syntax :
+    SELECT c1 AS a1 
+    FROM table_name ;
+
+- Group By : The group by clause in sql is used to group rows that have same values in one or more columns . It is commonly used with an aggregate functions .
+
+ Syntax :
+    SELECT column_name, AGGREGATE_FUNCTION(column_name)
+    FROM table_name
+    GROUP BY column_name;
+    
+
+
