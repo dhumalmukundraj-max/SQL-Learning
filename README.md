@@ -429,6 +429,14 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
     SELECT column_name, AGGREGATE_FUNCTION(column_name)
     FROM table_name
     GROUP BY column_name;
-    
+
+- Applying filters on group by 
+
+ Syntax :
+    SELECT column_name, COUNT(*)
+    FROM table_name
+    WHERE condition
+    GROUP BY column_name;
+
 
 
