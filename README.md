@@ -417,26 +417,91 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
 
 * DAY 9 :-
 
-- Alias (AS) : You can provide an alternate temporary name to the given columns 
+        - Alias (AS) : You can provide an alternate temporary name to the given columns 
 
- Syntax :
-    SELECT c1 AS a1 
-    FROM table_name ;
+                Syntax :
+                SELECT c1 AS a1 
+                FROM table_name ;
 
-- Group By : The group by clause in sql is used to group rows that have same values in one or more columns . It is commonly used with an aggregate functions .
+        - Group By : The group by clause in sql is used to group rows that have same values in one or more columns . It is commonly used with an aggregate functions .
 
- Syntax :
-    SELECT column_name, AGGREGATE_FUNCTION(column_name)
-    FROM table_name
-    GROUP BY column_name;
+                Syntax :
+                SELECT column_name, AGGREGATE_FUNCTION(column_name)
+                FROM table_name
+                GROUP BY column_name;
 
-- Applying filters on group by 
+        - Applying filters on group by 
 
- Syntax :
-    SELECT column_name, COUNT(*)
-    FROM table_name
-    WHERE condition
-    GROUP BY column_name;
+                Syntax :
+                SELECT column_name, COUNT(*)
+                FROM table_name
+                WHERE condition
+                GROUP BY column_name;
 
+* DAY 10 :-
 
+        - HAVING : HAVING clause in sql is used to filter grouped records after the group by clause 
+        
+                Syntax :
 
+                SELECT column1, aggregate_function(column2)
+                FROM table_name
+                WHERE condition
+                GROUP BY column1
+                HAVING aggregate_function(column2) condition;
+
+        - WHERE vs HAVING 
+
+        1.WHERE filters individual rows.
+        2.HAVING filters groups of rows.
+        3.WHERE is used before GROUP BY.
+        4.HAVING is used after GROUP BY.
+        5.WHERE generally cannot be used with aggregate functions.
+        6.HAVING can be used with aggregate functions.
+        7.WHERE reduces rows before grouping.
+        8.HAVING reduces groups after grouping.
+
+        - SQL Functions 
+
+        1.strftime :
+        The STRFTIME() function is mainly used in SQLite to format date and time values into a specified format. It takes a date/time value and returns it as a formatted text string. It is useful for extracting or displaying parts of a date, such as the year, month, day, hour, or minute.
+
+                Syntax:
+                
+                STRFTIME(format, date)
+
+        1.%Y → Year (e.g., 2026)
+        2.%m → Month (e.g., 09)
+        3.%d → Day (e.g., 09)
+        4.%H → Hour
+        5.%M → Minute
+        6.%S → Seconds
+
+        Ex:
+
+        SELECT STRFTIME('%Y', '2026-09-09');
+        2026 is output 
+
+        SELECT STRFTIME('%m-%d-%Y', '2026-09-09');
+        09-09-2026 is output 
+
+        - SQL Set Operators
+
+        Set operators in SQL are used to combine the results of two or more SELECT queries. The queries must generally have the same number of columns and compatible data types in corresponding columns.
+
+        Main Set Operators:
+
+        1.UNION – Combines results and removes duplicate rows.
+        2.UNION ALL – Combines results and keeps duplicate rows.
+        3.INTERSECT – Returns only rows that are common to both queries.
+        4.EXCEPT – Returns rows from the first query that are not present in the second query.
+
+                Syntax:
+                
+                SELECT column1 FROM table1
+                set_operator
+                SELECT column1 FROM table2;
+
+        Set operators = UNION, UNION ALL, INTERSECT, EXCEPT — they are used to combine or compare the results of multiple SELECT statements.
+
+        
