@@ -505,3 +505,26 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
         Set operators = UNION, UNION ALL, INTERSECT, EXCEPT — they are used to combine or compare the results of multiple SELECT statements.
 
         
+DAY 11 :- 
+
+- CASE clause :The CASE clause in SQL is used to perform conditional logic. It checks one or more conditions and returns a value based on which condition is true.
+
+It is similar to IF–ELSE statements in programming languages.
+
+Syntax :
+CASE
+    WHEN condition1 THEN result1
+    WHEN condition2 THEN result2
+    ELSE result
+END 
+
+Ex;
+SELECT name, marks,
+       CASE
+           WHEN marks >= 75 THEN 'Distinction'
+           WHEN marks >= 60 THEN 'First Class'
+           WHEN marks >= 40 THEN 'Pass'
+           ELSE 'Fail'
+       END AS result
+FROM Student;
+
