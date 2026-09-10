@@ -528,3 +528,105 @@ SELECT name, marks,
        END AS result
 FROM Student;
 
+--------------------------------------------------------------------------------------------------------------------------------
+
+- Concept of ER model :
+
+The Entity-Relationship (ER) Model is a conceptual model used to design and represent the structure of a database. It describes the data in terms of entities, attributes, and relationships between entities.
+
+The ER model is mainly used during the database design phase before creating actual database tables.
+
+The main concepts are:
+
+1.Entity
+2.Entity Type
+3.Attributes
+4.Relationship
+5.Relationship Type
+
+1. Entity
+
+An entity is a real-world object or thing that can be uniquely identified and about which data is stored.
+
+Examples:
+
+Student
+Teacher
+Employee
+Course
+Department
+
+For example, a particular student "Rahul" is an entity.
+
+2. Entity Type
+
+An entity type is a collection or group of similar entities that have the same attributes.
+
+Example:
+
+STUDENT is an entity type containing:
+
+Student_ID
+Name
+Age
+Address
+
+Individual students such as Rahul, Priya, and Amit are entities belonging to the STUDENT entity type.
+
+Difference:
+
+        Entity	                          Entity Type
+        
+A single real-world object	  Collection of similar objects
+Example: Rahul	                        Example: STUDENT
+Represents one instance	            Represents a class/type
+
+3. Attributes
+
+An attribute is a property or characteristic that describes an entity.
+
+For the STUDENT entity type:
+
+Student_ID
+Name
+Age
+Address
+Phone_No
+
+Example:
+
+Student_ID = 101, Name = Rahul, Age = 20
+
+Here, Student_ID, Name, and Age are attributes.
+
+4. Relationship
+
+A relationship represents an association or connection between two or more entities.
+
+Example:
+
+A STUDENT enrolls in a COURSE.
+
+STUDENT ──── ENROLLS ──── COURSE
+
+Here:
+
+STUDENT = Entity type
+COURSE = Entity type
+ENROLLS = Relationship
+
+Another example:
+
+EMPLOYEE ──── WORKS_FOR ──── DEPARTMENT
+
+This shows that an employee works for a department.
+
+5. Relationship Type
+
+A relationship type defines the association between entity types.
+
+Common relationship types based on cardinality are:
+
+One-to-One (1:1) — One person has one passport.
+One-to-Many (1:N) — One department has many employees.
+Many-to-Many (M:N) — Many students can enroll in many courses.
