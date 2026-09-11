@@ -505,128 +505,174 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
         Set operators = UNION, UNION ALL, INTERSECT, EXCEPT — they are used to combine or compare the results of multiple SELECT statements.
 
         
-DAY 11 :- 
+* DAY 11 :- 
 
-- CASE clause :The CASE clause in SQL is used to perform conditional logic. It checks one or more conditions and returns a value based on which condition is true.
+        - CASE clause :The CASE clause in SQL is used to perform conditional logic. It checks one or more conditions and returns a value based on which condition is true.
 
-It is similar to IF–ELSE statements in programming languages.
+        It is similar to IF–ELSE statements in programming languages.
 
-Syntax :
-CASE
-    WHEN condition1 THEN result1
-    WHEN condition2 THEN result2
-    ELSE result
-END 
+                Syntax :
+                        CASE
+                        WHEN condition1 THEN result1
+                        WHEN condition2 THEN result2
+                        ELSE result
+                        END 
 
-Ex;
-SELECT name, marks,
-       CASE
-           WHEN marks >= 75 THEN 'Distinction'
-           WHEN marks >= 60 THEN 'First Class'
-           WHEN marks >= 40 THEN 'Pass'
-           ELSE 'Fail'
-       END AS result
-FROM Student;
+                Ex;
+                        SELECT name, marks,
+                        CASE
+                                WHEN marks >= 75 THEN 'Distinction'
+                                WHEN marks >= 60 THEN 'First Class'
+                                WHEN marks >= 40 THEN 'Pass'
+                                ELSE 'Fail'
+                        END AS result
+                        FROM Student;
 
---------------------------------------------------------------------------------------------------------------------------------
+        ----------------------------------------------------------------------------------------------
 
-- Concept of ER model :
+        - Concept of ER model :
 
-The Entity-Relationship (ER) Model is a conceptual model used to design and represent the structure of a database. It describes the data in terms of entities, attributes, and relationships between entities.
+        The Entity-Relationship (ER) Model is a conceptual model used to design and represent the structure of a database. It describes the data in terms of entities, attributes, and relationships between entities.
 
-The ER model is mainly used during the database design phase before creating actual database tables.
+        The ER model is mainly used during the database design phase before creating actual database tables.
 
-The main concepts are:
+        The main concepts are:
 
-1.Entity
-2.Entity Type
-3.Attributes
-4.Relationship
-5.Relationship Type
+        1.Entity
+        2.Entity Type
+        3.Attributes
+        4.Relationship
+        5.Relationship Type
 
-1. Entity
+        1. Entity
 
-An entity is a real-world object or thing that can be uniquely identified and about which data is stored.
+        An entity is a real-world object or thing that can be uniquely identified and about which data is stored.
 
-Examples:
+        Examples:
 
-Student
-Teacher
-Employee
-Course
-Department
+        Student
+        Teacher
+        Employee
+        Course
+        Department
 
-For example, a particular student "Rahul" is an entity.
+        For example, a particular student "Rahul" is an entity.
 
-2. Entity Type
+        2. Entity Type
 
-An entity type is a collection or group of similar entities that have the same attributes.
+        An entity type is a collection or group of similar entities that have the same attributes.
 
-Example:
+        Example:
 
-STUDENT is an entity type containing:
+        STUDENT is an entity type containing:
 
-Student_ID
-Name
-Age
-Address
+        Student_ID
+        Name
+        Age
+        Address
 
-Individual students such as Rahul, Priya, and Amit are entities belonging to the STUDENT entity type.
+        Individual students such as Rahul, Priya, and Amit are entities belonging to the STUDENT entity type.
 
-Difference:
+                Difference:
 
-        Entity	                          Entity Type
-        
-A single real-world object	  Collection of similar objects
-Example: Rahul	                        Example: STUDENT
-Represents one instance	            Represents a class/type
+                        Entity	                          Entity Type
+                        
+                A single real-world object	  Collection of similar objects
+                Example: Rahul	                        Example: STUDENT
+                Represents one instance	            Represents a class/type
 
-3. Attributes
+        3. Attributes
 
-An attribute is a property or characteristic that describes an entity.
+        An attribute is a property or characteristic that describes an entity.
 
-For the STUDENT entity type:
+        For the STUDENT entity type:
 
-Student_ID
-Name
-Age
-Address
-Phone_No
+        Student_ID
+        Name
+        Age
+        Address
+        Phone_No
 
-Example:
+        Example:
 
-Student_ID = 101, Name = Rahul, Age = 20
+        Student_ID = 101, Name = Rahul, Age = 20
 
-Here, Student_ID, Name, and Age are attributes.
+        Here, Student_ID, Name, and Age are attributes.
 
-4. Relationship
+        4. Relationship
 
-A relationship represents an association or connection between two or more entities.
+        A relationship represents an association or connection between two or more entities.
 
-Example:
+        Example:
 
-A STUDENT enrolls in a COURSE.
+        A STUDENT enrolls in a COURSE.
 
-STUDENT ──── ENROLLS ──── COURSE
+        STUDENT ──── ENROLLS ──── COURSE
 
-Here:
+        Here:
 
-STUDENT = Entity type
-COURSE = Entity type
-ENROLLS = Relationship
+        STUDENT = Entity type
+        COURSE = Entity type
+        ENROLLS = Relationship
 
-Another example:
+        Another example:
 
-EMPLOYEE ──── WORKS_FOR ──── DEPARTMENT
+        EMPLOYEE ──── WORKS_FOR ──── DEPARTMENT
 
-This shows that an employee works for a department.
+        This shows that an employee works for a department.
 
-5. Relationship Type
+        5. Relationship Type
 
-A relationship type defines the association between entity types.
+        A relationship type defines the association between entity types.
 
-Common relationship types based on cardinality are:
+        Common relationship types based on cardinality are:
 
-One-to-One (1:1) — One person has one passport.
-One-to-Many (1:N) — One department has many employees.
-Many-to-Many (M:N) — Many students can enroll in many courses.
+        One-to-One (1:1) — One person has one passport.
+        One-to-Many (1:N) — One department has many employees.
+        Many-to-Many (M:N) — Many students can enroll in many courses.
+
+* DAY 12 :-
+
+Example: E-Commerce Application ER Model
+
+1. Entities
+Customer
+.Customer_ID (Primary Key)
+.Name
+.Email
+.Phone
+.Address
+Product
+.Product_ID (Primary Key)
+.Product_Name
+.Price
+.Category
+.Stock
+Order
+.Order_ID (Primary Key)
+.Order_Date
+.Total_Amount
+.Status
+Payment
+.Payment_ID (Primary Key)
+.Payment_Method
+.Payment_Date
+.Amount
+Seller
+.Seller_ID (Primary Key)
+.Seller_Name
+.Contact
+
+2. Relationships
+
+    Relationship	            Description	                                                        Cardinality
+Customer places Order	One customer can place many orders	                                          1 : M
+Order contains Product	One order can contain many products, and one product can be in many orders	  M : N
+Seller sells Product	One seller sells many products	                                                  1 : M
+Order has Payment	One order has one payment	                                                  1 : 1   
+
+- Cardinalities Used
+Customer → Order = 1 : M
+Order → Product = M : N
+Seller → Product = 1 : M
+Order → Payment = 1 : 1
