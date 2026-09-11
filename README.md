@@ -633,46 +633,46 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
 
 * DAY 12 :-
 
-Example: E-Commerce Application ER Model
+        Example: E-Commerce : Application of ER Model
 
-1. Entities
-Customer
-.Customer_ID (Primary Key)
-.Name
-.Email
-.Phone
-.Address
-Product
-.Product_ID (Primary Key)
-.Product_Name
-.Price
-.Category
-.Stock
-Order
-.Order_ID (Primary Key)
-.Order_Date
-.Total_Amount
-.Status
-Payment
-.Payment_ID (Primary Key)
-.Payment_Method
-.Payment_Date
-.Amount
-Seller
-.Seller_ID (Primary Key)
-.Seller_Name
-.Contact
+        1. Entities
+        Customer
+        .Customer_ID (Primary Key)
+        .Name
+        .Email
+        .Phone
+        .Address
+        Product
+        .Product_ID (Primary Key)
+        .Product_Name
+        .Price
+        .Category
+        .Stock
+        Order
+        .Order_ID (Primary Key)
+        .Order_Date
+        .Total_Amount
+        .Status
+        Payment
+        .Payment_ID (Primary Key)
+        .Payment_Method
+        .Payment_Date
+        .Amount
+        Seller
+        .Seller_ID (Primary Key)
+        .Seller_Name
+        .Contact
 
-2. Relationships
+        2. Relationships
 
-    Relationship	            Description	                                                        Cardinality
-Customer places Order	One customer can place many orders	                                          1 : M
-Order contains Product	One order can contain many products, and one product can be in many orders	  M : N
-Seller sells Product	One seller sells many products	                                                  1 : M
-Order has Payment	One order has one payment	                                                  1 : 1   
+        Relationships	            Descriptions	                                                Cardinality
+        Customer places Order	One customer can place many orders	                                          1 : M
+        Order contains Product	One order can contain many products, and one product can be in many orders	  M : N
+        Seller sells Product	One seller sells many products	                                                  1 : M
+        Order has Payment	One order has one payment	                                                  1 : 1   
 
-- Cardinalities Used
-Customer → Order = 1 : M
-Order → Product = M : N
-Seller → Product = 1 : M
-Order → Payment = 1 : 1
+        - Cardinalities Used
+        Customer → Order = 1 : M
+        Order → Product = M : N
+        Seller → Product = 1 : M
+        Order → Payment = 1 : 1
