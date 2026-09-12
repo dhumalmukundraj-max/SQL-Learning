@@ -689,3 +689,36 @@ Student table stores student details.
 Department table stores department information.
 
 Using a JOIN, we can display the student's name along with the department name.
+
+
+Types of SQL Joins :
+
+1.INNER JOIN
+Returns only the matching records from both tables.
+
+2.LEFT JOIN (LEFT OUTER JOIN)
+Returns all records from the left table and the matching records from the right table. Non-matching rows from the right table are shown as NULL.
+
+3.RIGHT JOIN (RIGHT OUTER JOIN)
+Returns all records from the right table and the matching records from the left table. Non-matching rows from the left table are shown as NULL.
+
+4.FULL OUTER JOIN (FULL JOIN)
+Returns all records from both tables. Matching rows are combined, while non-matching rows contain NULL.
+
+5.CROSS JOIN
+Returns the Cartesian product of both tables, where every row of the first table is combined with every row of the second table.
+
+6.SELF JOIN
+Joins a table with itself to compare rows or retrieve related data within the same table.
+
+
+
+Advantages of SQL Joins :
+
+1.Combines data from multiple tables efficiently.
+2.Reduces data redundancy.
+3.Improves database normalization.
+4.Makes complex data retrieval easy.
+5.Generates meaningful reports and analysis.
+6.Retrieves related information using common columns.
+
