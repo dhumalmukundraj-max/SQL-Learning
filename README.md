@@ -679,46 +679,55 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
 
 * DAY 13 - 
 
-What is a Join in SQL?
+        What is a Join in SQL?
 
-A JOIN in SQL is used to combine data from two or more tables based on a related column between them. It helps retrieve meaningful information stored in different tables without duplicating data.
+                A JOIN in SQL is used to combine data from two or more tables based on a related column between them. It helps retrieve meaningful information stored in different tables without duplicating data.
 
-For example, in a college database:
+                For example, in a college database:
 
-Student table stores student details.
-Department table stores department information.
+                Student table stores student details.
+                Department table stores department information.
 
-Using a JOIN, we can display the student's name along with the department name.
-
-
-Types of SQL Joins :
-
-1.INNER JOIN
-Returns only the matching records from both tables.
-
-2.LEFT JOIN (LEFT OUTER JOIN)
-Returns all records from the left table and the matching records from the right table. Non-matching rows from the right table are shown as NULL.
-
-3.RIGHT JOIN (RIGHT OUTER JOIN)
-Returns all records from the right table and the matching records from the left table. Non-matching rows from the left table are shown as NULL.
-
-4.FULL OUTER JOIN (FULL JOIN)
-Returns all records from both tables. Matching rows are combined, while non-matching rows contain NULL.
-
-5.CROSS JOIN
-Returns the Cartesian product of both tables, where every row of the first table is combined with every row of the second table.
-
-6.SELF JOIN
-Joins a table with itself to compare rows or retrieve related data within the same table.
+                Using a JOIN, we can display the student's name along with the department name.
 
 
+        Types of SQL Joins :
 
-Advantages of SQL Joins :
+                1.INNER JOIN
+                Returns only the matching records from both tables.
 
-1.Combines data from multiple tables efficiently.
-2.Reduces data redundancy.
-3.Improves database normalization.
-4.Makes complex data retrieval easy.
-5.Generates meaningful reports and analysis.
-6.Retrieves related information using common columns.
+                2.LEFT JOIN (LEFT OUTER JOIN)
+                Returns all records from the left table and the matching records from the right table. Non-matching rows from the right table are shown as NULL.
 
+                3.RIGHT JOIN (RIGHT OUTER JOIN)
+                Returns all records from the right table and the matching records from the left table. Non-matching rows from the left table are shown as NULL.
+
+                4.FULL OUTER JOIN (FULL JOIN)
+                Returns all records from both tables. Matching rows are combined, while non-matching rows contain NULL.
+
+                5.CROSS JOIN
+                Returns the Cartesian product of both tables, where every row of the first table is combined with every row of the second table.
+
+                6.SELF JOIN
+                Joins a table with itself to compare rows or retrieve related data within the same table.
+
+
+
+        Advantages of SQL Joins :
+
+                1.Combines data from multiple tables efficiently.
+                2.Reduces data redundancy.
+                3.Improves database normalization.
+                4.Makes complex data retrieval easy.
+                5.Generates meaningful reports and analysis.
+                6.Retrieves related information using common columns.
+
+
+        | Join Type       | Description                                                                  |
+        | --------------- | ---------------------------------------------------------------------------- |
+        | INNER JOIN      | Returns only matching records from both tables.                              |
+        | LEFT JOIN       | Returns all rows from the left table and matching rows from the right table. |
+        | RIGHT JOIN      | Returns all rows from the right table and matching rows from the left table. |
+        | FULL OUTER JOIN | Returns all rows from both tables, matching and non-matching.                |
+        | CROSS JOIN      | Returns every possible combination of rows from both tables.                 |
+        | SELF JOIN       | Joins a table with itself to retrieve related data.                          |
