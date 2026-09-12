@@ -676,3 +676,16 @@ Ex;Suppose we want to sort the students based on their age ; Highest to lowest
         Order → Product = M : N
         Seller → Product = 1 : M
         Order → Payment = 1 : 1
+
+* DAY 13 - 
+
+What is a Join in SQL?
+
+A JOIN in SQL is used to combine data from two or more tables based on a related column between them. It helps retrieve meaningful information stored in different tables without duplicating data.
+
+For example, in a college database:
+
+Student table stores student details.
+Department table stores department information.
+
+Using a JOIN, we can display the student's name along with the department name.
